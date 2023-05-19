@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1>Registration</h1>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <form name="registerForm" ng-submit="register()" novalidate>
+          <div class="form-group">
+            <div class="user">
+            <label for="username">Username</label>
+          </div>
+            <input type="   text" id="username" name="username" ng-model="user.username" placeholder="Enter your username" required>
+        
+            <span ng-show="registerForm.username.$error.required" ng-hide="registerForm.username.$valid">Username is required</span>
+          </div>
+          <div class="form-group">
+            <div class="email">
+            <label for="email">Email</label>
+          </div>
+            <input type="email" id="email" name="email" ng-model="user.email" placeholder="Enter your email" required>
+            <span ng-show="registerForm.email.$error.required">Email is required</span>
+            <span ng-show="registerForm.email.$error.email">Email is invalid</span>
+          </div>
+          <div class="form-group">
+            <div class="password">
+            <label for="password">Password</label>
+          </div>
+            <input type="password" id="password" name="password" ng-model="user.password" placeholder="Enter your password" required>
+            <span ng-show="registerForm.password.$error.required">Password is required</span>
+          </div>
+          <div class="form-group">
+            <div class="confirm-Password">
+            <label for="confirm-password">Confirm Password</label>
+          </div>
+            <input type="password" id="confirm-password" name="confirm-password" ng-model="user.confirmPassword" placeholder="Confirm your password" required>
+            <span ng-show="registerForm.confirmPassword.$error.required">Confirm Password is required</span>
+            <span ng-show="user.password !== user.confirmPassword">Passwords do not match</span>
+          </div>
+          <div class="submit">
+            <button type="submit" ng-enable="submitForm()">Submit</button>
+          </div>
+            <div class="cancel">
+            <button onclick="location.href='http://127.0.0.1:5500/AJS%20%E2%80%93%20AngularJS%20practical%20Test/login.html" type="button">
+                Cancel</button>
+              </div>
+          
+        </form>
+      </div>
+</body>
+</html>

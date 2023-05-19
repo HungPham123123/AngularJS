@@ -1,0 +1,74 @@
+<style>
+  * {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  .form-group {
+    margin: 10px;
+    padding: 0px 0px 0px 500px;
+  }
+
+
+
+    .form-control {
+    display: block;
+    width: 350px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .submit button{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    transform: translate(-50%, -50%);
+    background: #fff; 
+    box-sizing: border-box;
+    color: black;
+    border-radius: 10px;
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 20px;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    margin-left: 41%;
+    border: ;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+.error span {
+    color: red;
+}
+  
+  .cancel button {
+    position: absolute;
+    display: inline-block;
+    padding: 12px 21px;
+    transform: translate(-50%, -50%);
+    background: cornflowerblue;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: -4.7%;
+    letter-spacing: 4px;
+    margin-bottom: 0px;
+    margin-left: 49%;
+    border: none;
+  }
+  h1 {
+    margin-left: 36%;
+  }
+</style>
